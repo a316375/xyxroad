@@ -48,7 +48,7 @@ public class ViewPagerAdapter extends PagerAdapter {
         textView.setText(mListData.get(position));
 
         ImageView imageView=view.findViewById(R.id.image);
-        imageView.setImageResource(R.mipmap.ic_launcher);
+        imageView.setImageResource(R.mipmap.a01);
 
         container.addView(view);
         return view;
