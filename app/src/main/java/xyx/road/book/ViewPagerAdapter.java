@@ -51,7 +51,7 @@ public class ViewPagerAdapter extends PagerAdapter {
         ViewGroup view = (ViewGroup) inflater.inflate(R.layout.view_item, container, false);
 
         final TextView textView = view.findViewById(R.id.textView);
-        textView.setText(position+"");
+        textView.setText((position+1)+"");
 
         ImageView imageView=view.findViewById(R.id.image);
         imageView.setImageResource(mpics[position]);

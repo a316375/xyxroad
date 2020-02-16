@@ -27,7 +27,7 @@ public class ReadActivity extends AppCompatActivity {
 
 
 
-        int [] pic={R.mipmap.a01,R.mipmap.a02};
+        int [] pic={R.mipmap.a01,R.mipmap.a02,R.mipmap.a03};
 
         ViewPager viewPager = findViewById(R.id.viewPager);
         viewPager.setAdapter(new ViewPagerAdapter(this,pic));
