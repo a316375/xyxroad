@@ -17,12 +17,18 @@ import xyx.road.R;
 public class ViewPagerAdapter extends PagerAdapter {
 
     private Context mContext;
-    private List<String> mListData;
 
-    public ViewPagerAdapter(Context context, List<String> listDate) {
-        mContext = context;
-        mListData = listDate;
+    private int[] mpics;
+
+    public ViewPagerAdapter(Context mContext , int[] mpics) {
+        this.mContext = mContext;
+
+        this.mpics = mpics;
     }
+
+
+
+
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
@@ -31,7 +37,7 @@ public class ViewPagerAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return mListData.size();
+        return mpics.length;
     }
 
     @Override
@@ -45,10 +51,11 @@ public class ViewPagerAdapter extends PagerAdapter {
         ViewGroup view = (ViewGroup) inflater.inflate(R.layout.view_item, container, false);
 
         final TextView textView = view.findViewById(R.id.textView);
-        textView.setText(mListData.get(position));
+        textView.setText(position+"");
 
         ImageView imageView=view.findViewById(R.id.image);
-        imageView.setImageResource(R.mipmap.a01);
+        imageView.setImageResource(mpics[position]);
+
 
         container.addView(view);
         return view;

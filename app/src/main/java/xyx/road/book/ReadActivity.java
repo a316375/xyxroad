@@ -25,16 +25,13 @@ public class ReadActivity extends AppCompatActivity {
         ab.setTitle(string);
 
 
-        List<String> listDate = new ArrayList<>();
-        listDate.add("1");
-        listDate.add("2");
-        listDate.add("3");
-        listDate.add("4");
-        listDate.add("5");
+
+
+        int [] pic={R.mipmap.a01,R.mipmap.a02};
 
         ViewPager viewPager = findViewById(R.id.viewPager);
-        viewPager.setAdapter(new ViewPagerAdapter(this, listDate));
-        viewPager.setCurrentItem(2);
+        viewPager.setAdapter(new ViewPagerAdapter(this,pic));
+        viewPager.setCurrentItem(0);
 
     }
 }
