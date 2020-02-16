@@ -15,6 +15,7 @@ import xyx.road.R;
 public class ReadActivity extends AppCompatActivity {
 
     String  string;
+    int [] pic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +27,8 @@ public class ReadActivity extends AppCompatActivity {
 
 
 
-
-        int [] pic={R.mipmap.a01,R.mipmap.a02,R.mipmap.a03};
+        pic= new int[]{R.mipmap.ic_launcher};
+        if (string.equals(RootString.A[0]))   pic= new int[]{R.mipmap.a01, R.mipmap.a02, R.mipmap.a03};
 
         ViewPager viewPager = findViewById(R.id.viewPager);
         viewPager.setAdapter(new ViewPagerAdapter(this,pic));
