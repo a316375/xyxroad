@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">二建公路2020</string>
+    <string name="title_home">施工管理</string>
+    <string name="title_dashboard">法规</string>
+    <string name="title_notifications">公路</string>
+
+</resources>
