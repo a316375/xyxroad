@@ -2,9 +2,13 @@ package xyx.road.book;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
+
+import java.util.ArrayList;
+import java.util.List;
 
 import xyx.road.R;
 
@@ -19,6 +23,15 @@ public class ReadActivity extends AppCompatActivity {
 
          ActionBar ab = getSupportActionBar();
         ab.setTitle(string);
+
+
+        List<String> listDate = new ArrayList<>();
+        listDate.add("1");
+        listDate.add("2");
+        listDate.add("3");
+
+        ViewPager viewPager = findViewById(R.id.viewPager);
+        viewPager.setAdapter(new ViewPagerAdapter(this, listDate));
 
     }
 }
