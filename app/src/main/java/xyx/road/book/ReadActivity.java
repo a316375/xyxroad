@@ -34,6 +34,7 @@ public class ReadActivity extends AppCompatActivity {
 
         ViewPager viewPager = findViewById(R.id.viewPager);
         viewPager.setAdapter(new ViewPagerAdapter(this, listDate));
+        viewPager.setCurrentItem(2);
 
     }
 }
