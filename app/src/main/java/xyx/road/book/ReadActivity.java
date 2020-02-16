@@ -29,6 +29,8 @@ public class ReadActivity extends AppCompatActivity {
         listDate.add("1");
         listDate.add("2");
         listDate.add("3");
+        listDate.add("4");
+        listDate.add("5");
 
         ViewPager viewPager = findViewById(R.id.viewPager);
         viewPager.setAdapter(new ViewPagerAdapter(this, listDate));
